@@ -7,9 +7,9 @@ function Navigation() {
   ];
   return (
     <nav className="m-4">
-      <ul className="flex justify-around">
+      <ul className="flex gap-4 border rounded-lg border-cyan-200 py-2 px-4">
         {links.map(({ label, href }) => (
-          <li key={href}>
+          <li key={href} >
             <Link href={href}>{label}</Link>
           </li>
         ))}
